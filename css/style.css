@@ -1,6 +1,7 @@
 body
 {
 	background: white;
+
 }
 
 header, footer
@@ -23,12 +24,23 @@ section h3{
 	color: blue;
 }
 
+.content-wrapper
+{
+
+	margin: 0 auto;
+}
+
 .section-summary
 {
 	border: 1px solid red;
 	display: grid;
- 
 }
+
+.section-experience
+{
+
+}
+
 .column1
 {
   grid-column: 1;
