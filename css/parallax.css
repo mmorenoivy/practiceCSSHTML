@@ -1,0 +1,187 @@
+body, html{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.img1, .img2, .img3, .img4, .img5
+{
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+/*
+  fixed=Parallax
+  scroll=normal
+*/
+  background-attachment: fixed;
+}
+.technologies
+{
+  display: grid;
+}
+
+.skills-container {
+    width: 40%; /* Full width */
+}
+
+.skills {
+    text-align: right; /* Right-align text */
+    padding-right: 20px; /* Add some right padding */
+    line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #616161;} /* Green */
+.css {width: 80%; background-color: #616161;} /* Blue */
+.js {width: 65%; background-color: #616161;} /* Red */
+.php {width: 60%; background-color: #616161;} /* Dark Grey */
+
+
+.img1
+{
+  background-image: url('../images/11.jpeg');
+  min-height: 80%;
+}
+
+.img2
+{
+  background-image: url('../images/skill.jpg');
+  min-height: 80%;
+}
+
+.img3
+{
+  background-image: url('../images/2.jpeg');
+  min-height: 80%;
+}
+.img4
+{
+  background-image: url('../images/yale.jpeg');
+  min-height: 80%;
+}
+.img5
+{
+  background-image: url('../images/5.jpeg');
+  min-height: 40%;
+}
+
+.thumbnail {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: auto;
+}
+.thumbnail img {
+  border-radius: 100px;  /* Rounded border */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+.container
+{
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.responsive-image
+{
+  max-width: 100%;
+}
+
+.cell img{
+
+  display: block;
+  margin: 10px;
+}
+
+.section{
+  text-align: center;
+  padding: 50px 80px;
+
+}
+
+.section-light
+{
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark
+{
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext
+{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext .border
+{
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+}
+
+.ptext .border .trans
+{
+  background-color: transparent;
+}
+
+
+
+
+
+
+@media(max-width: auto)
+{
+  .img1, .img2, .img3, .img4, .img5
+  {
+    background-attachment: scroll;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .cell {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
+}
